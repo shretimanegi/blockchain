@@ -19,7 +19,10 @@ Walmart, in partnership with IBM’s Food Trust, uses blockchain to track the or
 Estonia uses blockchain to manage its citizens' digital identities and public services. Through this, citizens can access healthcare, vote online, and manage bank accounts securely. Blockchain ensures data integrity, privacy, and tamper-proof records in government services.  
 
 
-PART2: Block Anatomy    
+PART2: Block Anatomy  
+  
+Q1:Draw a block showing: data, previous hash, timestamp, nonce, and Merkle root.
+
 
   
 Q2:Briefly explain with an example how the Merkle root helps verify data integrity.  
@@ -36,7 +39,23 @@ A Merkle tree organises the transactions in all the blocks by repeatedly hashing
  H1234=hash(H12+H34) and H5555=hash(H55+H55)  
 4.Final hash  
  H12345555=hash(H1234+H5555)  
-This H12345555 is known as the Merkle root.
+This H12345555 is known as the Merkle root.  
+
+PART3: Consensus Conceptulization  
+
+Q1:What is Proof of Work and why does it require energy?
+
+Proof of Work(PoW) is a consensus mechanism used in Bitcoin to validate transactions, in which miners have to solve a complex cryptographic puzzle by trying different values or nonces to produce a valid hash. The miner who solves the problem is rewarded with cryptocurrency.PoW requires computational power to solve these puzzles, which consumes a lot of energy. This is because the problem is solved by trial and error, and millions of calculations may be needed before finding the correct answer.  
+
+Q2:What is Proof of Stake and how does it differ?  
+  
+Proof of Stake(Pos) is a consensus mechanism used in Ethereum in which validators are chosen to validate a new block by the amount of cryptocurrency they stake or put up as collateral. Instead of solving complex puzzles, the validators are chosen in a way that favours those with a larger stake or a longer-held stake. When they validate a block correctly, they earn rewards; if they try to cheat, they risk losing their staked coins. PoS differ from PoW in how validators are selected and how energy is used. PoS consumes less energy as there is no need for massive mining hardware, and is considered more environmentally friendly as compared to PoW.  
+
+Q3:What is Delegated Proof of Stake and how are validators selected?  
+
+Delegated Proof of Stake (DPoS) is a consensus mechanism used in TRON where token holders vote to elect a small number of trusted delegates (also called witnesses or validators) who are responsible for validating transactions and producing blocks. Instead of everyone competing to create blocks (as in PoW), only the selected delegates take turns doing so, making the process faster and more energy-efficient. Token holders can change their votes at any time, which keeps delegates accountable and promotes honest behaviour.Validators are selected through a democratic voting system. Each token holder can vote for a set of delegates by using their tokens like votes—the more tokens they hold, the more influence they have. The top-voted delegates become the active validators, while others wait as backups. This system allows for high performance and decentralisation through community participation.
+
+
 
 
 
