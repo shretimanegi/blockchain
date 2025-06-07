@@ -21,7 +21,7 @@ Estonia uses blockchain to manage its citizens' digital identities and public se
 
 PART2: Block Anatomy    
 
-  https://docs.google.com/document/d/1QK6_qp6h76x9-cmN_HpTUnNEQDSkH6SEYKddgnCNMEI/edit?tab=t.0
+  
 Q2:Briefly explain with an example how the Merkle root helps verify data integrity.  
 
 
