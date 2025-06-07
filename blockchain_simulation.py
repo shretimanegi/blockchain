@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import hashlib
 import time
 
@@ -92,4 +93,6 @@ for block in chain:
 #Check the validity
 print("Blockchain validity : ", is_valid(chain,difficulty))
 
+=======
+>>>>>>> 55e5514115ae0cabcb6831ef9547c47c1f247231
 
