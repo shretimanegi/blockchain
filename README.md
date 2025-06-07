@@ -27,7 +27,7 @@ A Merkle tree organises the transactions in all the blocks by repeatedly hashing
   
   For example if we have five transactions T1,T2,T3,T4,T5.  
 1.Hash individual hashes:  
- H1=hash(T1) , H2=hash(T2) , H3=hash(T3) , H4=hash(T4) , H5=hash(T5)  
+``H1=hash(T1) , H2=hash(T2) , H3=hash(T3) , H4=hash(T4) , H5=hash(T5)  
 2. Pair and hash(duplicate the last hash to make pair)  
  H12=hash(H1+H2), H34=hash(H3+H4) and H55=hash(H5+H5)  
 3.Pair the next level(again duplicate if needed)  
