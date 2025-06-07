@@ -20,7 +20,7 @@ Estonia uses blockchain to manage its citizens' digital identities and public se
 
 
 PART2: Block Anatomy    
-<pre> ```mermaid graph TD A[Block] A --> B[Data] A --> C[Previous Hash] A --> D[Timestamp] A --> E[Nonce] A --> F[Merkle Root] ``` </pre>
+
 Q2:Briefly explain with an example how the Merkle root helps verify data integrity.  
 
 
