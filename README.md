@@ -14,6 +14,7 @@ Q2: List 2 real-life use cases (e.g., supply chain, digital identity).
 2 real-life use case of Blockchain are:-  
 1.Walmart – Food Supply Chain Tracking  
 Walmart, in partnership with IBM’s Food Trust, uses blockchain to track the origin and journey of food products like mangoes and pork. Earlier, it used to take days to trace contaminated food, but with the help of blockchain, it takes just seconds to trace where a product came from, improving food safety and transparency.  
+
 2.Estonia – Digital Identity for Citizens  
 Estonia uses blockchain to manage its citizens' digital identities and public services. Through this, citizens can access healthcare, vote online, and manage bank accounts securely. Blockchain ensures data integrity, privacy, and tamper-proof records in government services.
 
