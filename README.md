@@ -1,4 +1,4 @@
-# blockchain_simulation.py
+# blockchain
 #Theoretical Part:  
 
 PART1: Blockchain Basics  
