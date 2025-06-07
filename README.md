@@ -1,6 +1,7 @@
 # blockchain_simulation.py
-#Theoretical Part:Blockchain Basics  
+#Theoretical Part:  
 
+PART1: Blockchain Basics  
 
 
 Q1:Define blockchain in your own words (100–150 words).  
