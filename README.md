@@ -23,16 +23,17 @@ PART2: Block Anatomy
 Q2:Briefly explain with an example how the Merkle root helps verify data integrity.  
 
 
-A Merkle tree organises the transactions in all the blocks by repeatedly hashing pairs of hashes together until only a single hash remains. This final hash is called the Merkle root, which summarises all the transactions.  
-For example if we have five transactions T1,T2,T3,T4,T5.  
+A Merkle tree organises the transactions in all the blocks by repeatedly hashing pairs of hashes together until only a single hash remains. This final hash is called the Merkle root, which summarises all the transactions.   
+  
+  For example if we have five transactions T1,T2,T3,T4,T5.  
 1.Hash individual hashes:  
-H1=hash(T1) , H2=hash(T2) , H3=hash(T3) , H4=hash(T4) , H5=hash(T5)  
+ H1=hash(T1) , H2=hash(T2) , H3=hash(T3) , H4=hash(T4) , H5=hash(T5)  
 2. Pair and hash(duplicate the last hash to make pair)  
-H12=hash(H1+H2), H34=hash(H3+H4) and H55=hash(H5+H5)  
+ H12=hash(H1+H2), H34=hash(H3+H4) and H55=hash(H5+H5)  
 3.Pair the next level(again duplicate if needed)  
-H1234=hash(H12+H34) and H5555=hash(H55+H55)  
+ H1234=hash(H12+H34) and H5555=hash(H55+H55)  
 4.Final hash  
-H12345555=hash(H1234+H5555)  
+ H12345555=hash(H1234+H5555)  
 This H12345555 is known as the Merkle root.
 
 
