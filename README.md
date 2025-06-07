@@ -19,7 +19,8 @@ Walmart, in partnership with IBM’s Food Trust, uses blockchain to track the or
 Estonia uses blockchain to manage its citizens' digital identities and public services. Through this, citizens can access healthcare, vote online, and manage bank accounts securely. Blockchain ensures data integrity, privacy, and tamper-proof records in government services.  
 
 
-PART2: Block Anatomy  
+PART2: Block Anatomy    
+<pre> ```mermaid graph TD A[Block] A --> B[Data] A --> C[Previous Hash] A --> D[Timestamp] A --> E[Nonce] A --> F[Merkle Root] ``` </pre>
 Q2:Briefly explain with an example how the Merkle root helps verify data integrity.  
 
 
