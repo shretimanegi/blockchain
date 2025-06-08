@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import hashlib
 import time
 
@@ -17,14 +17,7 @@ class Block:
     def compute_hash(self):
         block_string = f"{self.index}{self.timestamp}{self.data}{self.prev_hash}{self.nonce}"
         return hashlib.sha256(block_string.encode()).hexdigest() #Merkle root
-    
-    def mine(self,difficulty):
-        prefix='0'*difficulty #target pattern the hash must start with
-        while(not self.block_hash.startswith(prefix)):
-            #increase the value of nonce to make the hash start with target pattern
-            self.nonce+=1 
-            self.block_hash=self.compute_hash()
-    
+        
     def display(self):
         #prints the block
         print(f"Block : {self.index}")
@@ -34,7 +27,7 @@ class Block:
 
 
 #Check the validity of a blockchain
-def is_valid(chain,difficulty):
+def is_valid(chain):
     for i in range(1,len(chain)): # 0-block(Genisis) block has nothing to compare with
         
         current=chain[i] #current block
@@ -50,29 +43,21 @@ def is_valid(chain,difficulty):
         if current.prev_hash!=prev.block_hash:
             print(f"Block {current.index} has invalid prev hash")
             return False  #Chain is broken
-        
-        #To check if PoW was implemented correctly
-        if not current.block_hash.startswith('0'*difficulty):
-            print(f"Block {current.index} wasn't correctly mined")
-            return False  #Either not mined or tampered
-    
+            
     return True
 
 #Create Blockchain
-difficulty=3
+
 chain=[]
 
 #Genesis Block
 chain.append(Block(0,"Genesis block","0"))
-chain[0].mine(difficulty)
 
 #Block 1
 chain.append(Block(1,"Tanya Sharma",chain[0].block_hash))
-chain[1].mine(difficulty)
 
 #Block 2
 chain.append(Block(1,"Vinay Kumar",chain[1].block_hash))
-chain[2].mine(difficulty)
 
 #Display
 print("Blockchain: ")
@@ -80,19 +65,18 @@ for block in chain:
     block.display()
 
 #Validity
-print("Blockchain validity : ", is_valid(chain,difficulty))
+print("Blockchain validity : ", is_valid(chain))
 
 #CHALLENGE: Changing the data of Block 1 and recalculting the hash
-chain[0].data="Data has been tampered"
-chain[0].hash=chain[0].compute_hash()
+chain[1].data="Data has been tampered"
+chain[1].hash=chain[0].compute_hash()
 
 #After tampering
 for block in chain:
     block.display()
 
 #Check the validity
-print("Blockchain validity : ", is_valid(chain,difficulty))
+print("Blockchain validity : ", is_valid(chain))
 
-=======
->>>>>>> 55e5514115ae0cabcb6831ef9547c47c1f247231
+
 
